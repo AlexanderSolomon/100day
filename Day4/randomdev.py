@@ -41,10 +41,54 @@ import my_module
 
 
 
-names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
-names[-1] = "gg" 
-names.append("dark_man")
-print(names)
+# names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+# names[-2] = "gg" 
+# print(names)
+# names.append("dark_man")
+# print(names)
+# names[-1] = "replace dark man"
+# print(names)
 
-print(random.choices(names))
+# print(random.choices(names))
 
+
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+#position = input() # Where do you want to put the treasure?
+# 🚨 Don't change the code above 👆
+# Write your code below this row 👇
+position = "B3"
+
+# if position == "A1":
+#   line1 = ["X","️⬜️","️⬜️"]
+# elif position == "B1":
+#   line1 = ["⬜️","X","️⬜️"]
+# elif position == "C1":
+#   line1 = ["⬜️️","⬜️️","X"]
+# elif position == "A2":
+#   line2 = ["X","⬜️️","⬜️️"]
+# elif position == "B2":
+#   line2 = ["⬜️","X","️⬜️"]
+# elif position == "C2":
+#   line2 = ["⬜️️","⬜️️","X"]
+# elif position == "A3":
+#   line3 = ["X","️⬜️","️⬜️"]
+# elif position == "B3":
+#   line3 = ["⬜️","X","️⬜️"]
+# elif position == "C3":
+#   line3 = ["⬜️️","⬜️️","X"]
+
+#or
+letter = position[0].lower()
+abc = ["a", "b", "c"]
+letter_index = abc.index(letter)
+number_index = int(position[1]) - 1
+map[number_index][letter_index] = "X"
+
+
+# Write your code above this row 👆
+# 🚨 Don't change the code below 👇
+print(f"{line1}\n{line2}\n{line3}")
