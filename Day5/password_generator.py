@@ -13,11 +13,17 @@ nr_symbols = int(input("choose how many symbols \n"))
 
 
 
-# password = ""
+password = ""
 
-# for letter in range(1, nr_letter+1):
+for letter in range(1, nr_letter+1):
+    random_char = random.choice(letters)
+    password = password + random_char
+    print(password)
     
-
+for letter in range(1, nr_letter+1):
+    random_char = random.choice(letters)
+    password = password + random_char
+    print(password)
 
 m = (random.sample(letters, nr_letter)) 
 n = (random.sample(numbers, nr_numbers))
