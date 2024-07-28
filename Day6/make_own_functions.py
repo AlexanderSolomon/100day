@@ -1,12 +1,12 @@
 
 #when making own function start with keyword def
 
-def my_function():
+def myfunction():
     print("hello")
     print("bye")
 
 #call the function by writing the name
-my_function()
+myfunction()
 
 
 

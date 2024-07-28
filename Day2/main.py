@@ -68,8 +68,8 @@
 
 # weeks left in lifetime
 
-max_age = 90
-current_age = 15
+max_age = 80
+current_age = 33
 
 max_weeks = 52*90
 used_weeks = current_age *52

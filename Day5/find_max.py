@@ -5,5 +5,4 @@ print(max(student_scores))
 for student in student_scores:
     current = student
     next_one = student
-print(current)
-    
+    print(current)
