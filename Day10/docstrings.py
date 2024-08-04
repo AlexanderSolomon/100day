@@ -1,7 +1,10 @@
-#functions with output
+
+#docstrings multiline comments
+
 
 def format_name(f_name, l_name):
-    #convert the strings so every starting letter is capitol
+    """take a fist and last name and format it 
+to return the tilte case version of the name."""
     formated_f_name = f_name.title()
     formated_l_name = l_name.title()
    
@@ -12,5 +15,3 @@ formated_string = format_name("alex","sonsSSon")
 print(formated_string)
 
 print(len("alex"))
-
-
