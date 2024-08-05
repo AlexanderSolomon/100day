@@ -1,6 +1,7 @@
 #build my won calculator
 from art import logo
 print(logo)
+
 #add function
 def add(n1, n2):
     return n1+n2
@@ -17,6 +18,10 @@ def multi(n1,n2):
 def div(n1,n2):
     return n1/ n2
 
+#potens 
+def exp(n1,n2):
+    return n1 ** n2
+
 
 #store function in a dictionary named operations
 # # {key: value}
@@ -24,7 +29,7 @@ def div(n1,n2):
 # values = are the name of the functions
 
 
-operations = {"+": add ,"-": sub,"*": multi, "/":div}
+operations = {"+": add ,"-": sub,"*": multi, "/":div, "**":exp}
 
 def calculater():
     Keep_calculating = True
