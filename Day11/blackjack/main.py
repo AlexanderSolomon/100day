@@ -42,7 +42,6 @@ def deal_hands():
 #player gets card
 def hit_me():
     extra_card = random.choice(cards)
-    print(extra_card)
     if extra_card == 11 and sum(player) > 12:
         player.append(1)
     else:
@@ -51,6 +50,10 @@ def hit_me():
 #house gets card
 def hit_me_house():
     extra_card = random.choice(cards)
+    if extra_card == 11 and sum(house) > 12:
+        house.append(1)
+    else:
+        player.append(extra_card)
     house.append(extra_card)
     return print(f"house recieved a {extra_card} and the total is: {sum(house)}")
 
