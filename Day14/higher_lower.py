@@ -44,7 +44,7 @@ def find2randoms():
     # print(gameData.data[y].get("name"))
     # print(gameData.data[y].get("follower_count"))
 
-    
+#get new random in B place
 def bRandon():
     global followerCountB, infoA, infoB
     x = random.randint(0,49)
@@ -102,7 +102,7 @@ def gamestart():
             
             
         
-    
+   
 def replaceAandNewB():
     global infoA, infoB
     infoA.clear()
