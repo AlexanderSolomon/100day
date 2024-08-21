@@ -18,8 +18,6 @@ followerCountB = 0
 # Create a score counter
 score = 0 
 
-# Chances to guess = 1
-
       
 
 # a function that create 2 random numbers from list
