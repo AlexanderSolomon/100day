@@ -30,14 +30,14 @@ travel_log = [
   },
 ]
 
-print(travel_log)
+#print(travel_log)
+print(travel_log[1].get("visits"))
 
+# def add_new_country(country,visits,list_of_cities):
+#     new_entry = {"country": country,
+#                   "visits": visits,
+#                   "cities": list_of_cities}
+#     travel_log.append(new_entry)
+#     print(travel_log)
 
-def add_new_country(country,visits,list_of_cities):
-    new_entry = {"country": country,
-                  "visits": visits,
-                  "cities": list_of_cities}
-    travel_log.append(new_entry)
-    print(travel_log)
-
-add_new_country(country=new_country,list_of_cities=new_lists_of_cities,visits=new_visits)
+# add_new_country(country=new_country,list_of_cities=new_lists_of_cities,visits=new_visits)
