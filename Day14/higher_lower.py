@@ -54,12 +54,15 @@ def bRandon():
 
 def vursus():
     global score
-    print({infoA[0].get("name")})
+    # print({infoA[0].get("name")})
+    # print(f"Description: {infoA[0].get('description')}")
+    print(f"Name: {infoA[0].get('name')}, Description: {infoA[0].get('description')}")
     #print(followerCountA)
     
     print(art.vs)
     
-    print({infoB[0].get("name")})
+    #print({infoB[0].get("name")})
+    print(f"Name: {infoB[0].get('name')}, Description: {infoB[0].get('description')}")
     #print(followerCountB)
     
     
@@ -80,13 +83,10 @@ def gamestart():
         answer = input("Who has more followers A or B").lower()
         # clear and renew while correct answer
         if answer == a:
-            # add score
             score = score+1
             print(f"your score: {score} ")
             # create a function that replaces a and holds the new a b
-            #print(followerCountA)
             followerCountA = followerCountB
-            #print(followerCountA)
             infoA.clear()
             infoA.append(infoB[0])
             #print(infoA)
@@ -114,18 +114,19 @@ def replaceAandNewB():
 
 
 
-
-#print(infoA)
-#print(infoB)
-#print(followerCountA)
-#print(followerCountB)
 find2randoms()
 gamestart()
 print(f"current score {score}")
 
 
 
+################################################################################
+################################################################################
 
+#print(infoA)
+#print(infoB)
+#print(followerCountA)
+#print(followerCountB)
 # print(followerCountA)
 # print(followerCountB)
 # print(infoA)
