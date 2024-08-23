@@ -91,7 +91,8 @@ def espresso():
     resources["money"] += 1.5
 
 def latte():
-    resources["water"] -= 250
+    resources["water"] -= 200
+    resources["milk"] -= 150
     resources["coffee"] -= 18
     resources["money"] += 2.5
 
