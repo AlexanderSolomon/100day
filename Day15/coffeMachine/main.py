@@ -96,7 +96,7 @@ def latte():
     resources["coffee"] -= 18
     resources["money"] += 2.5
 
-
+#testing the subtractions
 print(resources)
 espresso()
 print(resources)
